@@ -24,9 +24,9 @@ with st.expander('Analizar texto'):
         if x >= 0.5:
             st.write( 'Es un sentimiento Positivo 😊')
         if x <= -0.5:
-    st.write('Es un sentimiento Negativo 😔')
-    image_negativo = Image.open('tristeza.webp')
-    st.image(image_negativo)
+            st.write('Es un sentimiento Negativo 😔')
+            image_negativo = Image.open('trsteza3.jpeg')
+            st.image(image_negativo)
 
         else:
             st.write( 'Es un sentimiento Neutral 😐')
