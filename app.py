@@ -23,6 +23,11 @@ with st.expander('Analizar texto'):
         x=round(blob.sentiment.polarity,2)
         if x >= 0.5:
             st.write( 'Es un sentimiento Positivo 😊')
+            image_positivo = Image.open('feliz.jpeg')
+            st.image(image_positivo)
+            audio_file = open('feliz.mp3', 'rb')
+            audio_bytes = audio_file.read()
+            st.audio(audio_bytes, format='feliz/mp3', start_time=0)
         if x <= -0.5:
             st.write('Es un sentimiento Negativo 😔')
             image_negativo = Image.open('tristeza3.jpeg')
