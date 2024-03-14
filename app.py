@@ -38,3 +38,8 @@ with st.expander('Analizar texto'):
 
         else:
             st.write( 'Es un sentimiento Neutral 😐')
+            image_neutral = Image.open('neutro.jpeg')
+            st.image(image_neutral)
+            audio_file = open('neutro.mp3', 'rb')
+            audio_bytes = audio_file.read()
+            st.audio(audio_bytes, format='neutro/mp3', start_time=0)
